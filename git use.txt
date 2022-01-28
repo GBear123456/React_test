@@ -1,0 +1,34 @@
+//Updating local git info from remote git
+
+git fetch
+
+//switching branch
+git checkout [branchName]
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+// creating branch locally
+git branch branchName
+
+// Push new branch remotely
+git push origin branchName
+
+
+https://support.atlassian.com/bitbucket-cloud/docs/branch-a-repository/
+
+--- Parent branch 의 정보를 Pull 받기 ----
+git pull origin parentbranchName (ex: git pull origin prd)
+visual stuido status bar 에 있는 sync 단추를 눌러 selfbranch 에 push 한다.(git push origin/selfbranchname)
+
+--- view git config in pc----
+git config --list
+
+--- Change git config -----
+git config user.name xxx
+git config user.email xxxxxx
+이렇게 하면 git config 정보가 변화된다. git config --list 를 실행하여 확인할수 있다.
+
